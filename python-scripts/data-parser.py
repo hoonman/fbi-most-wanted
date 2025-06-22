@@ -53,3 +53,7 @@ class Parser:
 parser = Parser()
 parser.get_fbi_data(5)
 print('most wanted: ', parser.most_wanted)
+
+
+# the logic for retrieving multiple data.
+# 
