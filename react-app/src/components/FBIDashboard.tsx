@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { fetchMostWanted, fetchDetails, fetchStats } from "./FBIService";
+import { fetchMostWanted, } from "./FBIService";
 import type WantedPerson from "../types/fbi.types";
+import Button from '@mui/material/Button';
 
 const FBIDashboard: React.FC = () => {
     const [mostWanted, setMostWanted] = useState<WantedPerson[]>([]);
@@ -30,6 +31,7 @@ const FBIDashboard: React.FC = () => {
 
     return (
         <div>
+            <Button variant="contained">hello world</Button>
             {mostWanted.map((person: WantedPerson)=> (
                 <div>{person.uid}</div>
             ))}

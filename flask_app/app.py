@@ -32,5 +32,3 @@ def get_details(item_id):
 if __name__ == "__main__":
     app.run()
 
-
-# follow this guide: https://chatgpt.com/share/6858f35d-bbb8-8007-a345-2edf81f7b629
