@@ -1,7 +1,7 @@
 # fbi-most-wanted
 app that helps find FBI's most wanted criminals
 
-## requirements
+## Features
 
 Most Wanted Home Page
 * a list of most wanted criminals laid out in one page.
@@ -25,4 +25,19 @@ FBI Chatbot
 FBI Tip submission
 * For each most wanted, users can submit evidence that may help find the criminal
 * Future requirement: store this tip data and feed it to the AI agent. Later on, an admin (FBI agent) can view these tips, the data, and summary of these tips using a chatbot.
+
+
+## Tech stack
+Backend
+* This application uses Flask backend for the API architecture
+* FBI API Service is written in Python
+Frontend
+* UI is React with Vite
+* MaterialUI for UI library
+* ChartJS for charts
+* React simple maps
+
+AI Agent
+* langchain/langgraph
+* MCP servers
 
