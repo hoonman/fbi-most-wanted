@@ -31,6 +31,7 @@ FBI Tip submission
 Backend
 * This application uses Flask backend for the API architecture
 * FBI API Service is written in Python
+  
 Frontend
 * UI is React with Vite
 * MaterialUI for UI library
