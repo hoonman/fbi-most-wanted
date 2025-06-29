@@ -12,6 +12,12 @@ FBI Dashboard
 * a table displaying the data of a criminal. we can use ag-grid for this purpose.
 * header filter system where we can filter the charts and table with.
 
+implement the following charts:
+1. distribution of criminals for each state. represented by a map chart
+2. bar chart showing how many criminals exist from each field office
+3. for a given time period, how many wanted people cases were opened up
+4. pie chart of what type of crime the most wanted people commited.
+
 FBI Chatbot
 * Build a RAG AI agent with Qwen LLM, LangGraph/LangChain structure, vectorstore for criminal data
 * Be able to answer questions regarding FBI most wanted data.
