@@ -3,6 +3,7 @@ import axios from "axios";
 export const fetchMostWanted = async (page=1, pageSize=20, filters={}) => {
     const params = { page, page_size: pageSize, ...filters};
     const res = await axios.get('/api/most_wanted', { params });
+    console.log("res: ", res);
     return res.data;
 }
 
