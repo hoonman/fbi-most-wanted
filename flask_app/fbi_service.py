@@ -19,8 +19,8 @@ class FBIService:
             if not data:
                 break
             all_items.extend(data)
-            if page % 10 == 0:
-                time.sleep(5)
+            # if page % 10 == 0:
+            #     time.sleep(5)
             page += 1
             print(f"page num: {page} \t total: {page * 20}")
         self.cache['items'] = all_items
@@ -52,4 +52,20 @@ class FBIService:
             if str(item.get('uid')) == item_id:
                 return item
         return None
+    
+    '''
+    this function retrieves the existing 'field offices' from cache
+    '''
+    def get_field_offices(self):
+        field_offices = set()
+        items = self.cache['items']
+        for item in items:
+            if 'field_offices' in item and item['field_offices']:
+                if item != None and item['field_offices'] != None and item['field_offices']:
+                        new_set = set(item['field_offices'])
+                        field_offices = field_offices | new_set
+
+        return list(field_offices)
+
+        
 

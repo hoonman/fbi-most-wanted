@@ -28,7 +28,14 @@ def get_details(item_id):
         return jsonify({"error" : "Not found"}), 404
     return jsonify(details)
 
+@app.route("/api/most_wanted/get_field_offices")
+def get_field_offices():
+    field_offices = service.get_field_offices()
+    if not field_offices:
+        return jsonify({"error": "Not found"}), 404
+    return jsonify(field_offices)
+
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 
